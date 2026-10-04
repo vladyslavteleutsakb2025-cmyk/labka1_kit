@@ -1,0 +1,15 @@
+2026-10-05 01:06:34,829 INFO Starting service availability scan from target list labs/lab02/data/data_v05/targets.json...
+2026-10-05 01:06:34,829 INFO Loaded 11 target(s), timeout = 2.0 s
+2026-10-05 01:06:34,833 DEBUG 127.0.0.1:22 (SSH) -> OFFLINE - Connection refused
+2026-10-05 01:06:34,833 DEBUG 127.0.0.1:80 (HTTP) -> OFFLINE - Connection refused
+2026-10-05 01:06:34,835 DEBUG localhost:443 (HTTPS) -> OFFLINE - Connection refused
+2026-10-05 01:06:36,837 DEBUG 192.0.2.10:80 (HTTP) -> OFFLINE TIMEOUT Connection timed out
+2026-10-05 01:06:38,840 DEBUG 198.51.100.20:443 (HTTPS) -> OFFLINE TIMEOUT Connection timed out
+2026-10-05 01:06:40,843 DEBUG 203.0.113.30:22 (SSH) -> OFFLINE TIMEOUT Connection timed out
+2026-10-05 01:06:40,848 DEBUG service.example.invalid:8080 (HTTP-ALT) -> OFFLINE - DNS resolution failed: nodename nor servname provided, or not known
+2026-10-05 01:06:40,850 DEBUG db.example.invalid:5432 (PostgreSQL) -> OFFLINE - DNS resolution failed: nodename nor servname provided, or not known
+2026-10-05 01:06:40,850 WARNING Skipping invalid target bad host name:80 - Invalid host name
+2026-10-05 01:06:40,850 WARNING Skipping invalid target 999.10.10.10:443 - Invalid IPv4 address
+2026-10-05 01:06:40,851 WARNING Skipping invalid target api.example.invalid:70000 - Port 70000 out of range (1-65535)
+2026-10-05 01:06:40,851 WARNING 8 service(s) are unreachable
+2026-10-05 01:06:40,852 INFO Detailed scan report saved to labs/lab02/data/scan_results.csv
